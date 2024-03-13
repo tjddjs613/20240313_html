@@ -1,0 +1,36 @@
+/* header */
+header nav>ul{
+    /* float부모 노드에 걸어주기 */
+    overflow: hidden;
+}
+header nav>ul>li{
+    float: left;
+    /* width제외 이유 : 고정크기가 아닌 content의 내용의 크기에 따라서 작성시 */
+}
+header nav,div.logo{
+    /* float해제 */
+    clear: both;
+}
+header{
+    /* 자식들의 기준점 */
+    position: relative;
+    height: 150px;
+}
+
+header .top{
+    position: absolute;
+    right: 0;
+    top:0;
+}
+
+header .bottom{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+header .logo{
+    position: absolute;
+    top: 20px;
+    left: 30px;
+}
