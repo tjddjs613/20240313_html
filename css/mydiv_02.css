@@ -1,0 +1,118 @@
+/* layout */
+body{
+    background-color: blanchedalmond;
+    /* border: 1px solid black; */
+}
+div.wrap{
+    border: 1px solid black;
+}
+header{
+    /* layout - 01 */
+    /*전체화면에서 좌우 중앙 정렬하는법
+    width 지정
+    margin : 0 auto로 지정
+    */
+    width: 960px;
+    margin: 0 auto;
+    /*여기까지*/
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+.wrap > .wrap-nav{
+    background-color: aqua;
+    
+    
+    
+}
+.wrap > .wrap-nav > nav{
+    width: 960px;
+    margin: 0 auto;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+.wrap-content{
+    width: 960px;
+    margin: 0 auto;
+    
+    box-sizing: border-box;
+}
+
+/* section과 aside 옆으로 작성해보기 */
+section{
+    /* layout 03
+    display:block 이지만 수평나누기
+    width지정
+    display : inline-block */
+    display: inline-block;
+    width: 80%;
+    background-color: gold;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 5px;
+    
+  
+    
+}
+aside{
+    /*layout - 03
+    display:block 이지만 일부영역만 사용
+    width : 지정
+    display : inline-block
+    */
+    display: inline-block;
+    width: 18%;
+    background-color: blue;
+    box-sizing: border-box;
+    
+    
+}
+footer{
+    /*layout - 02
+    footer의 위치잡기/단독으로 수직정렬
+    일부영역만 사용하다가 다시 block 수직정렬해야할때
+    clear:both
+    */
+     
+    border: 1px solid black;
+    width: 960px;
+    margin: 0 auto;
+    
+    padding: 10px;
+    /*box sizing border-box 매우 많이쓰임*/
+    box-sizing: border-box;
+}
+article{
+    
+    box-sizing: border-box;
+}
+
+.wrap-nav>nav>ul>li
+,footer>nav>ul>li{
+    display: inline-block;
+    padding: 10px;
+    margin:10px;
+}
+
+.wrap> * {
+    margin-bottom: 10px;
+}
+/* 
+.wrap>.wrap-main{
+    margin-bottim: 10px;
+}
+*/
+
+/* font size */
+.fs-1{
+    font-size: 24px;
+}
+.fs-2{
+    font-size: 18px;
+}
+.fs-3{
+    font-size: 16px;
+}
+.fs-4{
+    font-size: 14px;
+}

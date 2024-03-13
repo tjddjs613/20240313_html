@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>폼태그 1</title>
+    <style>
+        @import url(../css/my.css);
+        span,label,#n5v ,.aclass1 , form>div{ /*form태그안에있는 div에적용*/
+            /*p.c1{} 클래스c1이면서 p태그 인것에 적용*/
+            /*위의 예시에 c2인것을 적용하려면
+            p.c1.c2{} 로 작성*/
+            color: violet !important; 
+        }
+    </style>
+    <!-- <link href="../css/my.css" rel="stylesheet" type="text/css"> -->
+</head>
+<body>
+    <a href="#n5v" id="a1" class="aclass1">내부링크테스트</a>
+    <h1 class="tc-red bg-blue">input type 종류별</h1>
+
+    <form method="get" action="#">
+        <div>
+            <label for="n1text">text -value = 사용자입력</label>
+            <input type="text" name="n1" id="n1text" class="input5 text5">
+        </div>
+        <div>
+            <span>password</span>
+            <input type="password" name="n2" class="input5 pwd5">
+        </div>
+        <div>
+            <span>hidden</span>
+            <input type="hidden" name="n3" value="value필수">
+        </div>
+        <div>
+            <span>button - 데이터전송용도가 아님.name속성필요없음</span>
+            <input type="button" value="버튼입력" >
+        </div>
+        <div>
+            <span style="color: crimson;">checkbox - name의 속성값으로 그룹화한다. - value값 필수 / String[] n5Arr = request.getParameterValues("n5")/checkbox방식;</sapn>
+            <br>
+            <label for="n5v">배구: </label><input type="checkbox" name="n5" value="v" id="n5v">
+            <label for="n5b">야구: </label><input type="checkbox" name="n5" value="base"id="n5b">
+            <label for="n5s">축구: </label><input type="checkbox" name="n5" value="soccer" id="n5s"checked>
+            <br>
+            <span>Java: </span><input type="checkbox" name="n6" value="j">
+            <span>HTML: </span><input type="checkbox" name="n6" value="h">
+            <span>JDBC: </span><input type="checkbox" name="n6" value="jd">
+        </div>
+        <div>
+            <span>file - value가 선택적으로생김</sapn>
+            <input type="file" name="n6">
+        </div>
+        <div>
+            <span>radio - name속성값으로 그룹화할수있다. - value필수</span>
+            <span>JDBC: </span><input type="radio" name="n11" value="jd" checked="checked">
+            <span>Java: </span><input type="radio" name="n11" value="j" >
+            <span>HTML: </span><input type="radio" name="n6" value="h">
+            <span>CSS: </span><input type="radio" name="n6" value="cs">
+            <span>JS: </span><input type="radio" name="n6" value="js">
+                    </div>
+        <div>
+            <span>submit - name속성 필요없음</span>
+            <input type="submit" >
+        </div>
+        <div>
+            <span>reset - name속성 필요없음</span>
+            <input type="reset" >
+        </div>
+
+
+    </form>
+    
+    
+    
+    
+    <h1>Ex2Web salgrade insert</h1>
+    <form method="post" action="http://127.0.0.1:8080/Ex2Web/sallist/insert" target="_blank">
+        <input type="text" name="grade" value="" placeholder="입력해주세요" >
+        <input type="text" name="losal" value="">
+        <input type="text" name="hisal" value="">
+        
+        <input type="submit" value="제출하기" >
+        <input type="reset" value="초기화하기">
+
+    </form>
+    <form method="post" action="http://127.0.0.1:8080/Ex2Web/sallist/insert" target="_blank">
+        <fieldset>
+            <legend>부서추가</legend>
+        <div>
+            <span>grade: </span>
+            <input type="text" name="grade" value="초기값">
+        </div>
+        <div>
+            <span>losal: </span> 
+            <input type="text" name="losal" value="초기값">
+        </div>
+        <div>
+            <span>hisal: </span>
+            <input type="text" name="hisal" value="초기값">
+        </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>입력창</legend>
+        <div>
+        <input type="submit" value="제출하기" >
+        <input type="reset" value="초기화하기">
+        </div>
+        </fieldset>
+
+    </form>
+    
+    
+    
+</body>
+</html>

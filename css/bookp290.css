@@ -1,0 +1,41 @@
+div>section>article{
+    float: left;
+    width: 350px;
+    height: 300px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+footer{
+    clear: left;
+    background-color: black;
+}
+footer > h1{
+    color: aliceblue;
+    margin: 0 auto;
+    
+}
+body{
+    width: 800px;
+    
+}
+.main2{
+    text-align: left;
+}
+a {
+    display: block;
+    padding: 10px 20px;
+    background-color: #ccc;
+}
+a:link, a:visited {
+    color: black;
+    text-decoration: none;
+}
+a:hover {
+    background-color: #000;
+    color: #fff;
+}
+.main2>ul>li{
+    float: left;   
+}

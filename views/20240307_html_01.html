@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1 id = "page1">하이퍼링크 태그 a</h1>
+    <div><a href="http://naver.com" target="_blank">링크-외부</a></div>
+    <!-- black  새창만들기 -->
+    <!-- self default값으로되어있음 -->
+    <!-- parent  상위창으로 생성 -->
+    <!-- top 현재떠있는창중 마지막으로 띄워졌던창 -->
+    <div><a href="../views/20240308_html_01.html">링크-내부서버파일</a></div>
+    <a href = "#page2">링크-페이지내부</a>
+    <div><a href = "#page3">링크-페이지내부 2</a></div>
+
+    <ul>
+        <li>내용1</li>
+        <li>매우 자주쓰이는 명령어</li>
+        <li>순서가 필요하지 않은 목록 만들때 사용</li>
+        <li>ul 이 작성된 줄에 절대 작성금지 , li명령어 외 다른 태그 사용 금지</li>
+        <li>내용앞 큰 점모양은 CSS를 이용하여 다른모양으로 수정가능</li>
+        <li>li + * + 4 +엔터키 = > li 가4개생김</li>
+        <li>Art + crtl + 방향키 입력하면 동시에 입력가능 해제는 esc키</li>
+        <li>Art + crtl + 방향키 입력하면 동시에 입력가능 해제는 esc키</li>
+        <li>Art + crtl + 방향키 입력하면 동시에 입력가능 해제는 esc키</li>
+    </ul>
+    <ol type="I" start="5">
+        <li>내용1</li>
+        <li>type 종류는 4가지(default값은 1)start값은 숫자로(초기값은 1)</li>
+        <li>순서가 필요하지 않은 목록 만들때 사용</li>
+        <li>ul 이 작성된 줄에 절대 작성금지 , li명령어 외 다른 태그 사용 금지</li>
+        <li>내용앞 큰 점모양은 CSS를 이용하여 다른모양으로 수정가능</li>
+        <li>
+            <div>li + * + 4 +엔터키 = > li 가4개생김 Submenu</div>
+            <ul>
+                <li>서브메뉴1</li>
+                <li>서브메뉴2</li>
+            </ul>
+
+        </li>
+        <li>Art + crtl + 방향키 입력하면 동시에 입력가능 해제는 esc키</li>
+        <li>Art + crtl + 방향키 입력하면 동시에 입력가능 해제는 esc키</li>
+        <li>Art + crtl + 방향키 입력하면 동시에 입력가능 해제는 esc키</li>
+    </ol>
+
+    <dl>
+        <dt>dt = definition title</dt>
+        <dd>dd = definition data</dd>
+        <dd>dassafafsa</dd>
+        <dd>용어나 문장에 대한 정의 리스트 , 자동 들여쓰기기능</dd>
+
+    </dl>
+    <figure id="page2">
+        <figcaption>표 2 제목1</figcaption>
+    <table border="1" >
+        <tr>
+            <td>내용 1</td>
+            <td>내용 2</td>
+            <td>내용 3</td>
+            <td>내용 4</td>
+        </tr>
+        <tr>
+            <td>내용 5</td>
+            <td>내용 6</td>
+            <td>내용 7</td>
+            <td>내용 8</td>
+        </tr>
+        <tr>
+            <td>내용 9</td>
+            <td>내용 10</td>
+            <td>내용 11</td>
+            <td>내용 12</td>
+        </tr>
+
+    </table>
+    <figcaption>표 2 제목1</figcaption>
+</figure>
+<hr>
+<span>영역태그중 inline영역의 대표주자</span>
+<span>영역태그중 inline영역의 대표주자</span>
+<span>영역태그중 inline영역의 대표주자</span>
+<div>영역태그중 block영역의 대표주자</div>
+<div>영역태그중 block영역의 대표주자</div>
+<div>영역태그중 block영역의 대표주자</div>
+
+<h1>표태그도 좀 중요함</h1>
+<span>영역태그중 inline영역의 대표주자</span>
+    <table border="1" id="page3">
+        <caption>표1 - 항상 표 위에 가운데정렬</caption>
+    <thead>
+        <tr>
+            <th>내용 1aaaa</th>
+            <td>내용 2</td>
+            <td>내용 3</td>
+            <td>내용 4</td>
+        </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <th>내용 5</th>
+        <td>내용 6</td>
+        <td>내용 7</td>
+        <td>내용 8</td>
+    </tr>
+    </tbody>
+    <tfoot>
+    <tr>
+        <td>내용 9</td>
+        <td>내용 10</td>
+        <td>내용 11</td>
+        <td>내용 12</td>
+        </tr>
+    </tfoot>
+    </table>
+
+
+
+
+
+
+    출력되는 위치
+    <br>
+    공백은 많이 띄워도 1개만 인식
+    <br>
+    &nbsp; &nbsp; &nbsp;&nbsp;공백 &nbsp; &nbsp; &nbsp;&nbsp;만들어보기 &nbsp; &nbsp; &nbsp;&nbsp; 성공
+    <br>
+    "live server startup 키 - Art + L 을 누른후"" Art + O눌러서 실행"
+    <br>
+    <p>
+        cmd 창열고 ipconfig로 내 아이피 알아내기 192.168.10.53
+        (임시방편)
+    </p>
+    <br>
+    <!-- ctrl + /로 주석생성 -->
+    <h1>첫번째로 큰 제목</h1>
+    <h2>두번째로 큰 제목</h2>
+    <h3>세번째로 큰 제목</h3>
+    <h4>네번째로 큰 제목</h4>
+    <h5>다섯번째로 큰 제목</h5>
+    <h6>여섯번째로 큰 제목</h6>
+    <h7>일곱번째로 큰 제목</h7>
+    <h8>여덟번째로 큰 제목</h8>
+    <hr>
+    <p>줄긋기 </p>
+    <hr>
+
+    <p>h7 , h8 은 적용안됨 h7 , h8 은 적용안됨h7 , h8 은 적용안됨h7 , h8 은 적용안됨h7 , h8 은 적용안됨h7 , h8 은 적용안됨h7 , h8 은 적용안됨h7 , h8 은
+        적용안됨h7 , h8 은 적용안됨
+        h7 , h8 은 적용안됨h7 , h8 은 적용안됨h7 , h8 은 적용안됨h7 , h8 은 적용안됨h7 , h8 은 적용안됨h7 , h8 은 적용안됨h7 , h8 은 적용안됨h7 , h8 은
+        적용안됨h7 , h8 은 적용안됨
+        h7 , h8 은 적용안됨h7 , h8 은 적용안됨h7 , h8 은 적용안됨h7 , h8 은 적용안됨
+    </p>
+    <strong>굵은 글자 만들기</strong>
+    <br>
+    <b>굵은 글자 만들기</b>
+    <br>
+    <p><strong><small><em>글자 테스트<mark>[css]</mark>가 대신해줄거임</em></small></strong></p>
+
+
+
+
+
+</body>
+
+</html>

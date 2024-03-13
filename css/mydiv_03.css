@@ -1,0 +1,119 @@
+/* layout */
+body{
+    background-color: blanchedalmond;
+    /* border: 1px solid black; */
+}
+div.wrap{
+    border: 1px solid black;
+}
+header{
+    /* layout - 01 */
+    /*전체화면에서 좌우 중앙 정렬하는법
+    width 지정
+    margin : 0 auto로 지정
+    */
+    width: 960px;
+    margin: 0 auto;
+    /*여기까지*/
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+.wrap > .wrap-nav{
+    background-color: aqua;
+    
+    
+    
+}
+.wrap > .wrap-nav > nav{
+    width: 960px;
+    margin: 0 auto;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+.wrap-content{
+    position:relative;
+    /* 나의 자식들의 기준점 relative  */
+    height: 500px;
+    /* absolute의 기준점인 relative에 높이지정하는 방법1*/
+    /* left: 10px;
+    top:15px; */
+    width: 960px;
+    margin: 0 auto;
+    
+    box-sizing: border-box;
+}
+
+/* section과 aside 옆으로 작성해보기 */
+section{
+    /* layout 04
+    position */
+    position:absolute;
+    top:0;
+    left: 0;
+
+    width: 80%;
+    background-color: gold;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 5px;
+    
+  
+    
+}
+aside{
+     /* layout 04
+    position */
+    position: absolute;
+    top:0;
+    right: 0;
+    display: inline-block;
+    width: 18%;
+    background-color: blue;
+    box-sizing: border-box;
+    
+    
+}
+footer{
+    border: 1px solid black;
+    width: 960px;
+    margin: 0 auto;
+    
+    padding: 10px;
+    /*box sizing border-box 매우 많이쓰임*/
+    box-sizing: border-box;
+}
+article{
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+.wrap-nav>nav>ul>li
+,footer>nav>ul>li{
+    display: inline-block;
+    padding: 10px;
+    margin:10px;
+}
+
+.wrap> * {
+    margin-bottom: 10px;
+}
+/* 
+.wrap>.wrap-main{
+    margin-bottim: 10px;
+}
+*/
+
+/* font size */
+.fs-1{
+    font-size: 24px;
+}
+.fs-2{
+    font-size: 18px;
+}
+.fs-3{
+    font-size: 16px;
+}
+.fs-4{
+    font-size: 14px;
+}

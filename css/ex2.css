@@ -1,0 +1,30 @@
+body{
+    background-color: black;
+}
+div{
+    border: 1px solid gold;
+    margin: 0 auto;
+}
+.main{
+    width: 600px;
+    border: none;
+    background-color: burlywood;
+
+}
+.main3 > table *{
+    border: 1px solid black;
+    border-collapse: collapse;
+    
+}
+.main * {
+    margin-bottom: 20px;
+    padding: 3px;
+    border-radius: 25px;
+}
+.main2 > ul *{
+    display: inline-block;
+    background-color: gold;
+    padding: 10px;
+    margin: 10px;
+    
+}

@@ -1,0 +1,90 @@
+body{
+    background-color: plum;
+    padding: 20px;
+}
+
+header{
+    width: 960px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    border: 1px solid gold;
+}
+.mainmenu>nav>ul>li{
+display: inline-block;
+padding: 10px;
+margin: 10px;
+background-color: aqua;
+}
+.mainmenu >nav{
+    width: 960px;
+    margin: 0 auto;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+.house{
+    position: relative;
+    height: 600px;
+    width: 960px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+section{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: gold;
+    box-sizing: border-box;
+    border: 1px solid red;
+    border-radius: 5px;
+    width: 80%;
+    
+
+}
+aside{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 18%;
+    border: 1px solid blue;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: aliceblue;
+}
+footer{
+    width: 960px;
+    margin: 0 auto;
+    background-color: wheat;
+    border: 1px solid yellow;
+    
+}
+.f-menu>ul>li{
+    display: inline-block;
+    padding: 20px;
+}
+footer > * {
+    display: inline-block;
+    padding: 50px;
+}
+
+.main{
+    padding: 10px;
+}
+article{
+    border: 1px solid black;
+    padding: 10px;
+}
+.a{
+    padding: 30px;
+    margin-bottom: 10px;
+}
+.b{
+    padding: 30px;
+    margin-bottom: 10px;
+}
+.c{
+    padding: 30px;
+}
