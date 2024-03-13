@@ -21,7 +21,7 @@ aside ul>li {
     padding: 10px;
     border: 1px solid black;
 }
-/* 겹치는선 없에는법 */
+
 /* radio버튼 보였다가 안보였다가 하는 방법 */
 aside input[type=radio] {
 
@@ -42,4 +42,12 @@ aside input[type=radio]:nth-of-type(2):checked~div:nth-of-type(1) {
 
 aside input[type=radio]:nth-of-type(2):checked~div:nth-of-type(2) {
     display: block;
+}
+
+/* 겹치는선 삭제하는 방법 */
+aside ul>li {
+    border: 1px solid black;
+}
+aside ul>li:not(:last-child){
+    border-bottom: 0px;
 }
