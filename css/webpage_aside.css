@@ -4,6 +4,8 @@ aside ul>li>a>div {
 
 aside ul>li>a>div:first-child {
     width: 45px;
+
+    margin-right: 10px;
 }
 
 aside ul>li>a>div:last-child {
@@ -15,8 +17,12 @@ aside ul>li {
     clear: both;
     /* float 부모 */
     overflow: hidden;
-}
 
+    padding: 10px;
+    border: 1px solid black;
+}
+/* 겹치는선 없에는법 */
+/* radio버튼 보였다가 안보였다가 하는 방법 */
 aside input[type=radio] {
 
     display: none;
