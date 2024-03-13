@@ -1,18 +1,18 @@
 /*최적 해상도 - 960px*/
 /* font 정하기 family,size */
-body { 
+body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 1.1em;
-    line-height: 1.2em;
+    line-height: 1.1em;
 }
 
 .gothic-a1-regular {
     font-family: "Gothic A1", sans-serif;
     font-weight: 800;
     font-style: italic;
-    font-size: 1.28em;
+    font-size: 1.15em;
     /* padding: 10px 0; */
-    line-height: 1.3em;
+    line-height: 1.15em;
 }
 
 /* header에 백그라운드컬러지정시 양끝에는 적용이안됨 */
@@ -36,7 +36,7 @@ header {
     padding-bottom: 10px;
     /* 자유로운 배치의 기준점이됨. 자식absolute 있을때 */
     position: relative;
-   
+
 
 }
 
@@ -74,12 +74,13 @@ ul {
     overflow: hidden;
 }
 
-.bottom, .logo {
+.bottom,
+.logo {
     /* float의 동위요소에 clear(형제관계인것에) */
     clear: both;
 }
 
-a {
+nav a {
     display: inline-block;
     /* 여기에 padding을 해야 마우스 포인터 전체적용 */
     padding: 10px;
@@ -96,7 +97,7 @@ a:visited{
 a:active{
     color: blueviolet;
 } */
-a:hover {
+nav a:hover {
     color: gold;
     background-color: black;
 }
@@ -183,4 +184,25 @@ footer {
     margin: 0 auto;
     padding: 10px 0;
 
+}
+
+.tab-item>ul>li {
+    padding: 10px;
+    clear: both;
+}
+
+.tab-item>ul>li>a>div:first-child {
+    /*  */
+    float: left;
+    width: 45px;
+    margin-right: 10px;
+}
+
+.tab-item>ul>li>div:last-child {
+    float: left;
+    width: 120px;
+}
+
+.tab-item>ul>li {
+    overflow: hidden;
 }
