@@ -1,19 +1,39 @@
-aside ul>li>a>div{
+aside ul>li>a>div {
     float: left;
 }
-aside ul>li>a>div:first-child{
+
+aside ul>li>a>div:first-child {
     width: 45px;
- }
-aside ul>li>a>div:last-child{
-     width: 120px;
- }
-aside ul> li{
+}
+
+aside ul>li>a>div:last-child {
+    width: 120px;
+}
+
+aside ul>li {
     /* float 해제 */
     clear: both;
     /* float 부모 */
     overflow: hidden;
 }
-aside input[type=radio]{
-    
-    display:none;
- }
+
+aside input[type=radio] {
+
+    display: none;
+}
+
+aside input[type=radio]:nth-of-type(1):checked~div:nth-of-type(1) {
+    display: block;
+}
+
+aside input[type=radio]:nth-of-type(1):checked~div:nth-of-type(2) {
+    display: none;
+}
+
+aside input[type=radio]:nth-of-type(2):checked~div:nth-of-type(1) {
+    display: none;
+}
+
+aside input[type=radio]:nth-of-type(2):checked~div:nth-of-type(2) {
+    display: block;
+}
