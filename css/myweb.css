@@ -221,31 +221,31 @@ display:none;
     display:none;
  }
 
- input[type=radio]:nth-of-type(1):checked{
+ /* input[type=radio]:nth-of-type(1):checked{
     height: 50px;
     width: 50px;
  }
  input[type=radio]:nth-of-type(2):checked{
     height: 50px;
     width: 50px;
- }
+ } */
 input[type=radio]:nth-of-type(1):checked
- ~ div:nth-of-type(1)
+ ~ div.tab-item:nth-of-type(1)
  {
     display: block;
  }
 input[type=radio]:nth-of-type(1):checked
- ~ div:nth-of-type(2)
+ ~ div.tab-item:nth-of-type(2)
  {
     display: none;
  }
 input[type=radio]:nth-of-type(2):checked
- ~ div:nth-of-type(1)
+ ~ div.tab-item:nth-of-type(1)
  {
     display: none;
  }
- input[type=radio]:nth-of-type(2):checked
- ~ div:nth-of-type(2)
+input[type=radio]:nth-of-type(2):checked
+ ~ div.tab-item:nth-of-type(2)
  {
     display: block;
  }
@@ -257,5 +257,5 @@ input[type=radio]:nth-of-type(2):checked
  .tab-item > ul>li:nth-child(2n+1){
     background-color: darkgoldenrod;
  }
- 
 
+ 
