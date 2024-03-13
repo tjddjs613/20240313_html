@@ -12,7 +12,7 @@ header nav,div.logo{
     clear: both;
 }
 header{
-    /* 자식들의 기준점 */
+    /* position  자식들의 기준점 */
     position: relative;
     height: 150px;
 }
@@ -33,4 +33,27 @@ header .logo{
     position: absolute;
     top: 20px;
     left: 30px;
+}
+
+/* li-a링크 padding,background,border 생성 */
+
+header a{
+    display: inline-block;
+    border:1px solid black;
+}
+header li:first-child>a{
+    border-radius: 15px 0 0 15px;
+}
+header li:last-child>a{
+    border-radius:  0 15px 15px 0 ;
+}
+header .top a{
+    padding: 5px 10px;
+}
+header .bottom a{
+    padding: 10px 15px;
+}
+header a:hover{
+    background-color: black;
+    color: whitesmoke;
 }
