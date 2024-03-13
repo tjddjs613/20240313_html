@@ -1,15 +1,19 @@
-ul>li>a>div{
+aside ul>li>a>div{
     float: left;
 }
-ul>li>a>div:first-child{
+aside ul>li>a>div:first-child{
     width: 45px;
  }
- ul>li>a>div:last-child{
+aside ul>li>a>div:last-child{
      width: 120px;
  }
-ul> li{
+aside ul> li{
     /* float 해제 */
     clear: both;
     /* float 부모 */
     overflow: hidden;
 }
+aside input[type=radio]{
+    
+    display:none;
+ }
