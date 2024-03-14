@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,7 +16,7 @@
     <!-- 4. a모양 미리만들어두기-->
     <link href="/css/webpage_core.css" rel="stylesheet">
     <!-- 5. body layout 영역 설정 - 화면설계서 -->
-    <link href="/css/webpage_layout.css" rel="stylesheet">
+    <!-- <link href="/css/webpage_layout.css" rel="stylesheet"> -->
     <!-- header영역 style -->
     <link href="/css/webpage_header.css" rel="stylesheet">
     <!-- footer영역 style -->
@@ -24,7 +25,67 @@
     <link href="/css/webpage_section.css" rel="stylesheet">
     <!-- aside영역 style -->
     <link href="/css/webpage_aside.css" rel="stylesheet">
+    <style>
+       @import url("/css/webpage_layout.css") screen and (min-width:801px);
+       /* url에 연결하는방법  */
+       /* 반응형에 관한 코드 작성 */
+       @media screen and (min-width: 801px) {
+
+            /*  */
+            header .top a {
+                padding: 5px 10px;
+            }
+
+            header .bottom a {
+                padding: 10px 15px;
+            }
+        }
+
+        @media screen and (max-width: 800px) {
+            .wrap-header>header {
+                width: 600px;
+                margin: 0 auto;
+            }
+
+            /* footer 부분*/
+            .wrap-footer {
+                background-color: burlywood;
+                /* float배치 해제 */
+                clear: both;
+            }
+
+            .wrap-footer>footer {
+                width: 600px;
+                margin: 0 auto;
+            }
+
+            /* main부분 */
+            .wrap-main {
+                background-color: aquamarine;
+                width: 600px;
+                margin: 0 auto;
+                /* background color 빈공간 생김
+     margin-top: 10px;
+    margin-bottom: 10px; */
+                overflow: hidden;
+                padding: 10px 0;
+            }
+
+            .wrap-main>section {
+                width: 600px;
+                /* float: left; */
+                /* margin-right: 10px; */
+            }
+
+            .wrap-main>aside {
+                width: 400px;
+                /* float: left; */
+            }
+
+        }
+    </style>
 </head>
+
 <body>
     <div class="wrap">
         <div class="wrap-header">
@@ -38,7 +99,7 @@
                         <li><a href="#55">메뉴5</a></li>
                     </ul>
                 </nav>
-    
+
                 <nav class="bottom">
                     <ul>
                         <li><a href="#66">메뉴6</a></li>
@@ -52,79 +113,145 @@
                     <h2>로고 </h2>
                     <h4>두줄로 나타내기</h4>
                 </div>
-    
+
             </header>
         </div>
-        </div>
-        <div class="wrap-main">
-            <section>
-                <article class="article-1">
-                    <h1>Flexbox</h1>
-                    <div class="flex-3">
-                        <div>dasdafa</div>
-                        <div>dasdsad</div>
-                        <div>fadasdasd</div>
-                    </div>
-                    <div class="flex-3">
-                        <div>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut elit est. Proin turpis ex, suscipit in risus ut, aliquet sodales augue. Ut eleifend orci vitae nibh dapibus facilisis. Curabitur varius diam at nulla auctor faucibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi a purus sed odio laoreet gravida vel id nunc. Duis id tortor enim. Sed sed iaculis nisi. Aenean non augue pharetra, blandit leo sit amet, fermentum leo. Vestibulum id molestie elit. Integer sed luctus erat, vitae iaculis felis. Aliquam erat volutpat. Quisque eget lacinia sem. Sed ut elit vel leo bibendum fermentum ac quis ante. Vivamus molestie tincidunt pulvinar. Donec ut erat id risus congue suscipit.
-
-                        </div>
-                        <div>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut elit est. Proin turpis ex, suscipit in risus ut, aliquet sodales augue. Ut eleifend orci vitae nibh dapibus facilisis. Curabitur varius diam at nulla auctor faucibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi a purus sed odio laoreet gravida vel id nunc. Duis id tortor enim. Sed sed iaculis nisi. Aenean non augue pharetra, blandit leo sit amet, fermentum leo. Vestibulum id molestie elit. Integer sed luctus erat, vitae iaculis felis. Aliquam erat volutpat. Quisque eget lacinia sem. Sed ut elit vel leo bibendum fermentum ac quis ante. Vivamus molestie tincidunt pulvinar. Donec ut erat id risus congue suscipit.
-
-                        </div>
-                        <div>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut elit est. Proin turpis ex, suscipit in risus ut, aliquet sodales augue. Ut eleifend orci vitae nibh dapibus facilisis. Curabitur varius diam at nulla auctor faucibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi a purus sed odio laoreet gravida vel id nunc. Duis id tortor enim. Sed sed iaculis nisi. Aenean non augue pharetra, blandit leo sit amet, fermentum leo. Vestibulum id molestie elit. Integer sed luctus erat, vitae iaculis felis. Aliquam erat volutpat. Quisque eget lacinia sem. Sed ut elit vel leo bibendum fermentum ac quis ante. Vivamus molestie tincidunt pulvinar. Donec ut erat id risus congue suscipit.
-
-                        </div>
-                        <br>
-                        <div class="inputform">
-                            <div>orem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut elit est. Proin turpis ex, suscipit in risus ut, aliquet sodales augue. Ut eleifend orci vitae nibh dapibus facilisis. Curabitur varius diam at nulla auctor faucibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi a purus sed odio laoreet gravida vel id nunc. Duis id tortor enim. Sed sed iaculis nisi. Aenean non augue pharetra, blandit leo sit amet, fermentum leo. Vestibulum id molestie elit. Integer sed luctus erat, vitae iaculis felis. Aliquam erat volutpat. Quisque eget lacinia sem. Sed ut elit vel leo bibendum fermentum ac quis ante. Vivamus molestie tincidunt pulvinar. Donec ut erat id risus congue suscipit.
-                            </div>
-                            <div>orem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut elit est. Proin turpis ex, suscipit in risus ut, aliquet sodales augue. Ut eleifend orci vitae nibh dapibus facilisis. Curabitur varius diam at nulla auctor faucibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi a purus sed odio laoreet gravida vel id nunc. Duis id tortor enim. Sed sed iaculis nisi. Aenean non augue pharetra, blandit leo sit amet, fermentum leo. Vestibulum id molestie elit. Integer sed luctus erat, vitae iaculis felis. Aliquam erat volutpat. Quisque eget lacinia sem. Sed ut elit vel leo bibendum fermentum ac quis ante. Vivamus molestie tincidunt pulvinar. Donec ut erat id risus congue suscipit.
-                            </div>
-                            <div>orem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut elit est. Proin turpis ex, suscipit in risus ut, aliquet sodales augue. Ut eleifend orci vitae nibh dapibus facilisis. Curabitur varius diam at nulla auctor faucibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi a purus sed odio laoreet gravida vel id nunc. Duis id tortor enim. Sed sed iaculis nisi. Aenean non augue pharetra, blandit leo sit amet, fermentum leo. Vestibulum id molestie elit. Integer sed luctus erat, vitae iaculis felis. Aliquam erat volutpat. Quisque eget lacinia sem. Sed ut elit vel leo bibendum fermentum ac quis ante. Vivamus molestie tincidunt pulvinar. Donec ut erat id risus congue suscipit.
-                            </div>
-                            </div>
-                        <br>
+    </div>
+    <div class="wrap-main">
+        <section>
+            <article class="article-1">
+                <h1>Flexbox</h1>
+                <div class="flex-3">
+                    <div>dasdafa</div>
+                    <div>dasdsad</div>
+                    <div>fadasdasd</div>
+                </div>
+                <div class="flex-3">
+                    <div>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut elit est. Proin turpis ex,
+                        suscipit in risus ut, aliquet sodales augue. Ut eleifend orci vitae nibh dapibus facilisis.
+                        Curabitur varius diam at nulla auctor faucibus. Class aptent taciti sociosqu ad litora torquent
+                        per conubia nostra, per inceptos himenaeos. Morbi a purus sed odio laoreet gravida vel id nunc.
+                        Duis id tortor enim. Sed sed iaculis nisi. Aenean non augue pharetra, blandit leo sit amet,
+                        fermentum leo. Vestibulum id molestie elit. Integer sed luctus erat, vitae iaculis felis.
+                        Aliquam erat volutpat. Quisque eget lacinia sem. Sed ut elit vel leo bibendum fermentum ac quis
+                        ante. Vivamus molestie tincidunt pulvinar. Donec ut erat id risus congue suscipit.
 
                     </div>
-                </article>
-                <article class="article-2">
-                    <h1>grid-3</h1>
-                    <div class="grid-3">
-                        <div>dasdafa</div>
-                        <div>dasdsad</div>
-                        <div>fadasdasd</div>
-                    </div>
-                    <div class="grid-3">
-                        <div>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut elit est. Proin turpis ex, suscipit in risus ut, aliquet sodales augue. Ut eleifend orci vitae nibh dapibus facilisis. Curabitur varius diam at nulla auctor faucibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi a purus sed odio laoreet gravida vel id nunc. Duis id tortor enim. Sed sed iaculis nisi. Aenean non augue pharetra, blandit leo sit amet, fermentum leo. Vestibulum id molestie elit. Integer sed luctus erat, vitae iaculis felis. Aliquam erat volutpat. Quisque eget lacinia sem. Sed ut elit vel leo bibendum fermentum ac quis ante. Vivamus molestie tincidunt pulvinar. Donec ut erat id risus congue suscipit.
-
-                        </div>
-                        <div>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut elit est. Proin turpis ex, suscipit in risus ut, aliquet sodales augue. Ut eleifend orci vitae nibh dapibus facilisis. Curabitur varius diam at nulla auctor faucibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi a purus sed odio laoreet gravida vel id nunc. Duis id tortor enim. Sed sed iaculis nisi. Aenean non augue pharetra, blandit leo sit amet, fermentum leo. Vestibulum id molestie elit. Integer sed luctus erat, vitae iaculis felis. Aliquam erat volutpat. Quisque eget lacinia sem. Sed ut elit vel leo bibendum fermentum ac quis ante. Vivamus molestie tincidunt pulvinar. Donec ut erat id risus congue suscipit.
-
-                        </div>
-                        <div>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut elit est. Proin turpis ex, suscipit in risus ut, aliquet sodales augue. Ut eleifend orci vitae nibh dapibus facilisis. Curabitur varius diam at nulla auctor faucibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi a purus sed odio laoreet gravida vel id nunc. Duis id tortor enim. Sed sed iaculis nisi. Aenean non augue pharetra, blandit leo sit amet, fermentum leo. Vestibulum id molestie elit. Integer sed luctus erat, vitae iaculis felis. Aliquam erat volutpat. Quisque eget lacinia sem. Sed ut elit vel leo bibendum fermentum ac quis ante. Vivamus molestie tincidunt pulvinar. Donec ut erat id risus congue suscipit.
-
-                        </div>
+                    <div>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut elit est. Proin turpis ex,
+                        suscipit in risus ut, aliquet sodales augue. Ut eleifend orci vitae nibh dapibus facilisis.
+                        Curabitur varius diam at nulla auctor faucibus. Class aptent taciti sociosqu ad litora torquent
+                        per conubia nostra, per inceptos himenaeos. Morbi a purus sed odio laoreet gravida vel id nunc.
+                        Duis id tortor enim. Sed sed iaculis nisi. Aenean non augue pharetra, blandit leo sit amet,
+                        fermentum leo. Vestibulum id molestie elit. Integer sed luctus erat, vitae iaculis felis.
+                        Aliquam erat volutpat. Quisque eget lacinia sem. Sed ut elit vel leo bibendum fermentum ac quis
+                        ante. Vivamus molestie tincidunt pulvinar. Donec ut erat id risus congue suscipit.
 
                     </div>
-                </article>
-                <article>
-                    </article>
+                    <div>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut elit est. Proin turpis ex,
+                        suscipit in risus ut, aliquet sodales augue. Ut eleifend orci vitae nibh dapibus facilisis.
+                        Curabitur varius diam at nulla auctor faucibus. Class aptent taciti sociosqu ad litora torquent
+                        per conubia nostra, per inceptos himenaeos. Morbi a purus sed odio laoreet gravida vel id nunc.
+                        Duis id tortor enim. Sed sed iaculis nisi. Aenean non augue pharetra, blandit leo sit amet,
+                        fermentum leo. Vestibulum id molestie elit. Integer sed luctus erat, vitae iaculis felis.
+                        Aliquam erat volutpat. Quisque eget lacinia sem. Sed ut elit vel leo bibendum fermentum ac quis
+                        ante. Vivamus molestie tincidunt pulvinar. Donec ut erat id risus congue suscipit.
 
-            </section>
-            <aside>
-                <input type="radio" name="n1" id="firsttab" checked="checked">
+                    </div>
+                    <br>
+                    <div class="inputform">
+                        <div>orem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut elit est. Proin turpis ex,
+                            suscipit in risus ut, aliquet sodales augue. Ut eleifend orci vitae nibh dapibus facilisis.
+                            Curabitur varius diam at nulla auctor faucibus. Class aptent taciti sociosqu ad litora
+                            torquent per conubia nostra, per inceptos himenaeos. Morbi a purus sed odio laoreet gravida
+                            vel id nunc. Duis id tortor enim. Sed sed iaculis nisi. Aenean non augue pharetra, blandit
+                            leo sit amet, fermentum leo. Vestibulum id molestie elit. Integer sed luctus erat, vitae
+                            iaculis felis. Aliquam erat volutpat. Quisque eget lacinia sem. Sed ut elit vel leo bibendum
+                            fermentum ac quis ante. Vivamus molestie tincidunt pulvinar. Donec ut erat id risus congue
+                            suscipit.
+                        </div>
+                        <div>orem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut elit est. Proin turpis ex,
+                            suscipit in risus ut, aliquet sodales augue. Ut eleifend orci vitae nibh dapibus facilisis.
+                            Curabitur varius diam at nulla auctor faucibus. Class aptent taciti sociosqu ad litora
+                            torquent per conubia nostra, per inceptos himenaeos. Morbi a purus sed odio laoreet gravida
+                            vel id nunc. Duis id tortor enim. Sed sed iaculis nisi. Aenean non augue pharetra, blandit
+                            leo sit amet, fermentum leo. Vestibulum id molestie elit. Integer sed luctus erat, vitae
+                            iaculis felis. Aliquam erat volutpat. Quisque eget lacinia sem. Sed ut elit vel leo bibendum
+                            fermentum ac quis ante. Vivamus molestie tincidunt pulvinar. Donec ut erat id risus congue
+                            suscipit.
+                        </div>
+                        <div>orem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut elit est. Proin turpis ex,
+                            suscipit in risus ut, aliquet sodales augue. Ut eleifend orci vitae nibh dapibus facilisis.
+                            Curabitur varius diam at nulla auctor faucibus. Class aptent taciti sociosqu ad litora
+                            torquent per conubia nostra, per inceptos himenaeos. Morbi a purus sed odio laoreet gravida
+                            vel id nunc. Duis id tortor enim. Sed sed iaculis nisi. Aenean non augue pharetra, blandit
+                            leo sit amet, fermentum leo. Vestibulum id molestie elit. Integer sed luctus erat, vitae
+                            iaculis felis. Aliquam erat volutpat. Quisque eget lacinia sem. Sed ut elit vel leo bibendum
+                            fermentum ac quis ante. Vivamus molestie tincidunt pulvinar. Donec ut erat id risus congue
+                            suscipit.
+                        </div>
+                    </div>
+                    <br>
+
+                </div>
+            </article>
+            <article class="article-2">
+                <h1>grid-3</h1>
+                <div class="grid-3">
+                    <div>dasdafa</div>
+                    <div>dasdsad</div>
+                    <div>fadasdasd</div>
+                </div>
+                <div class="grid-3">
+                    <div>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut elit est. Proin turpis ex,
+                        suscipit in risus ut, aliquet sodales augue. Ut eleifend orci vitae nibh dapibus facilisis.
+                        Curabitur varius diam at nulla auctor faucibus. Class aptent taciti sociosqu ad litora torquent
+                        per conubia nostra, per inceptos himenaeos. Morbi a purus sed odio laoreet gravida vel id nunc.
+                        Duis id tortor enim. Sed sed iaculis nisi. Aenean non augue pharetra, blandit leo sit amet,
+                        fermentum leo. Vestibulum id molestie elit. Integer sed luctus erat, vitae iaculis felis.
+                        Aliquam erat volutpat. Quisque eget lacinia sem. Sed ut elit vel leo bibendum fermentum ac quis
+                        ante. Vivamus molestie tincidunt pulvinar. Donec ut erat id risus congue suscipit.
+
+                    </div>
+                    <div>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut elit est. Proin turpis ex,
+                        suscipit in risus ut, aliquet sodales augue. Ut eleifend orci vitae nibh dapibus facilisis.
+                        Curabitur varius diam at nulla auctor faucibus. Class aptent taciti sociosqu ad litora torquent
+                        per conubia nostra, per inceptos himenaeos. Morbi a purus sed odio laoreet gravida vel id nunc.
+                        Duis id tortor enim. Sed sed iaculis nisi. Aenean non augue pharetra, blandit leo sit amet,
+                        fermentum leo. Vestibulum id molestie elit. Integer sed luctus erat, vitae iaculis felis.
+                        Aliquam erat volutpat. Quisque eget lacinia sem. Sed ut elit vel leo bibendum fermentum ac quis
+                        ante. Vivamus molestie tincidunt pulvinar. Donec ut erat id risus congue suscipit.
+
+                    </div>
+                    <div>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut elit est. Proin turpis ex,
+                        suscipit in risus ut, aliquet sodales augue. Ut eleifend orci vitae nibh dapibus facilisis.
+                        Curabitur varius diam at nulla auctor faucibus. Class aptent taciti sociosqu ad litora torquent
+                        per conubia nostra, per inceptos himenaeos. Morbi a purus sed odio laoreet gravida vel id nunc.
+                        Duis id tortor enim. Sed sed iaculis nisi. Aenean non augue pharetra, blandit leo sit amet,
+                        fermentum leo. Vestibulum id molestie elit. Integer sed luctus erat, vitae iaculis felis.
+                        Aliquam erat volutpat. Quisque eget lacinia sem. Sed ut elit vel leo bibendum fermentum ac quis
+                        ante. Vivamus molestie tincidunt pulvinar. Donec ut erat id risus congue suscipit.
+
+                    </div>
+
+                </div>
+            </article>
+            <article>
+            </article>
+
+        </section>
+        <aside>
+            <input type="radio" name="n1" id="firsttab" checked="checked">
             <input type="radio" name="n1" id="secondtab">
-           
+
             <label for="firsttab">firsttab</label>
             <label for="secondtab">secondtab</label>
-       
+
             <div class="tab-item">
                 <ul>
                     <li>
@@ -221,19 +348,20 @@
                     </li>
                 </ul>
             </div>
-            </aside>
-        </div>
-        <div class="wrap-footer">
-            <footer>
-                <div>
-                    slide image
-                </div>
-                <h3>HTML5 + CSS3 Basic</h3>
-                <address>website blabla</address>
-            </footer>
-        </div>
+        </aside>
+    </div>
+    <div class="wrap-footer">
+        <footer>
+            <div>
+                slide image
+            </div>
+            <h3>HTML5 + CSS3 Basic</h3>
+            <address>website blabla</address>
+        </footer>
+    </div>
 
 
     </div>
 </body>
+
 </html>

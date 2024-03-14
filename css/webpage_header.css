@@ -38,6 +38,8 @@ header .logo{
 /* li-a링크 padding,background,border 생성 */
 
 header a{
+    /* 원래inline인데 변경이유
+    width,height,padding,margin설정을 위해 */
     display: inline-block;
     border:1px solid black;
 }
